@@ -83,6 +83,8 @@ def makeLinks(id, country, city):
     elif country == 'China':
         if city == 'Hong Kong':
             prefix = prefix + 'hk/'
+        elif city == 'Macao':
+            prefix = prefix + 'mo/'
         else:
             prefix = prefix + 'cn/'
     elif country == 'Spain':
