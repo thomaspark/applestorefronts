@@ -105,6 +105,8 @@ def makeLinks(id, country, city):
         prefix = prefix + 'ae/'
     elif country == 'Macao':
         prefix = prefix + 'mo/'
+    elif country == 'Mexico':
+        prefix = prefix + 'mx/'
 
     return [prefix + 'retail/' + id + '/', prefix + 'retail/' + id + '/images/' + id + suffix]
 
