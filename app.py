@@ -63,7 +63,7 @@ application = webapp.WSGIApplication(
 
 def makeLinks(id, country, city):
 
-    prefix = 'http://images.apple.com/'
+    prefix = 'http://www.apple.com/'
     suffix = 'hero_large.jpg'
 
     if country == 'UK':
