@@ -63,7 +63,7 @@ application = webapp.WSGIApplication(
 
 def makeLinks(id, country, city):
 
-    prefix = 'https://images.apple.com/'
+    prefix = ''
     suffix = 'hero_large.jpg'
 
     if country == 'UK':
@@ -112,7 +112,7 @@ def makeLinks(id, country, city):
     elif country == 'Taiwan':
         prefix = prefix + 'tw/'
 
-    return [prefix + 'retail/' + id + '/', prefix + 'retail/' + id + '/images/' + suffix]
+    return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://images.apple.com/' + prefix + 'retail/' + id + '/images/' + suffix]
 
 reader = csv.reader(open("stores.csv", "U"))
 
