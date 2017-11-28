@@ -195,7 +195,9 @@
 			<div id="{{ store.1 }}" class="{% ifequal size 'big' %}span6 {% else %}span4 {% endifequal %}store {{ store.7 }}{% if store.4 %} {{ store.4 }}{% endif %} {{ store.5 }}">
 
 				<div class="photo">
-					<a target="_blank" href="{{ store.10 }}"><img data-href="{{ store.11 }}" src="/img/blank.png" alt="{{ store.2 }}"></a>
+					<a target="_blank" href="{{ store.10 }}">
+						<img data-href="{{ store.11 }}" src="/img/blank.png" alt="{{ store.2 }}" onerror="imgError(this);">
+					</a>
 				</div>
 
 				<div class="ribbon">

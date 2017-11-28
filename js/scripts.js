@@ -37,3 +37,9 @@ function centerAnchor(e){
 }
 
 $('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { e.stopPropagation(); });
+
+function imgError(image) {
+  image.onerror = "";
+  image.src = "/img/placeholder.png";
+  return true;
+}
