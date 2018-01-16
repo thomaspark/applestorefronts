@@ -1,250 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Apple Storefronts</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
-	<meta name="description" content="A photo gallery of every Apple retail store the world over.">
-	<meta name="author" content="Thomas Park">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta charset="utf-8">
+  <title>Apple Storefronts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+  <meta name="description" content="A photo gallery of every Apple retail store the world over.">
+  <meta name="author" content="Thomas Park">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-	<link rel="canonical" href="http://applestorefronts.appspot.com/{% ifnotequal filter 'All' %}{{ filter|lower }}/{% endifnotequal %}">
-	<link rel="stylesheet" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
-	<link rel="apple-touch-icon" sizes="144x144" href="img/icon-144x144.png">
+  <link rel="canonical" href="http://applestorefronts.appspot.com/{% ifnotequal filter 'All' %}{{ filter|lower }}/{% endifnotequal %}">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/icon-144x144.png">
 
-	<!--[if lt IE 9]>
-		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+  <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-	<script>
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-23019901-2']);
-	_gaq.push(['_trackPageview']);
+  <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23019901-2']);
+  _gaq.push(['_trackPageview']);
 
-	(function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	})();
-	</script>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  </script>
 
 </head>
 <body>
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=368810406570577&version=v2.0";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=368810406570577&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
-	<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
 
-				<ul class="nav" id="logo">
-					<li class=""><a href="/">Apple Storefronts</a></li>
-				</ul>
+        <ul class="nav" id="logo">
+          <li class=""><a href="/">Apple Storefronts</a></li>
+        </ul>
 
-				<ul class="nav" id="main-menu">
-					<li>
-						<div class="btn-group">
-							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-								{{ filter }}
-								<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu" data-no-collapse="true">
-								<li><a href="/all/{{ sort }}{% if size %}/{{ size }}{% endif %}">All</a></li>
-								<li><a href="/gallery/{{ sort }}{% if size %}/{{ size }}{% endif %}">Gallery</a></li>
-								<li class="divider"></li>
-								<li><a href="/australia/{{ sort }}{% if size %}/{{ size }}{% endif %}">Australia</a></li>
-								<li><a href="/belgium/{{ sort }}{% if size %}/{{ size }}{% endif %}">Belgium</a></li>
-								<li><a href="/brazil/{{ sort }}{% if size %}/{{ size }}{% endif %}">Brazil</a></li>
-								<li class="dropdown-submenu">
-									<a href="/canada/{{ sort }}{% if size %}/{{ size }}{% endif %}">Canada</a>
-									<ul class="dropdown-menu">
-										<li><a href="/alberta/{{ sort }}{% if size %}/{{ size }}{% endif %}">Alberta</a></li>
-										<li><a href="/british_columbia/{{ sort }}{% if size %}/{{ size }}{% endif %}">British Columbia</a></li>
-										<li><a href="/manitoba/{{ sort }}{% if size %}/{{ size }}{% endif %}">Manitoba</a></li>
-										<li><a href="/nova_scotia/{{ sort }}{% if size %}/{{ size }}{% endif %}">Nova Scotia</a></li>
-										<li><a href="/ontario/{{ sort }}{% if size %}/{{ size }}{% endif %}">Ontario</a></li>
-										<li><a href="/quebec/{{ sort }}{% if size %}/{{ size }}{% endif %}">Quebec</a></li>
-									</ul>
-								</li>
-								<li><a href="/china/{{ sort }}{% if size %}/{{ size }}{% endif %}">China</a></li>
-								<li><a href="/france/{{ sort }}{% if size %}/{{ size }}{% endif %}">France</a></li>
-								<li><a href="/germany/{{ sort }}{% if size %}/{{ size }}{% endif %}">Germany</a></li>
-								<li><a href="/italy/{{ sort }}{% if size %}/{{ size }}{% endif %}">Italy</a></li>
-								<li><a href="/japan/{{ sort }}{% if size %}/{{ size }}{% endif %}">Japan</a></li>
-								<li><a href="/mexico/{{ sort }}{% if size %}/{{ size }}{% endif %}">Mexico</a></li>
-								<li><a href="/netherlands/{{ sort }}{% if size %}/{{ size }}{% endif %}">Netherlands</a></li>
-								<li><a href="/singapore/{{ sort }}{% if size %}/{{ size }}{% endif %}">Singapore</a></li>
-								<li><a href="/spain/{{ sort }}{% if size %}/{{ size }}{% endif %}">Spain</a></li>
-								<li><a href="/sweden/{{ sort }}{% if size %}/{{ size }}{% endif %}">Sweden</a></li>
-								<li><a href="/switzerland/{{ sort }}{% if size %}/{{ size }}{% endif %}">Switzerland</a></li>
-								<li><a href="/taiwan/{{ sort }}{% if size %}/{{ size }}{% endif %}">Taiwan</a></li>
-								<li><a href="/turkey/{{ sort }}{% if size %}/{{ size }}{% endif %}">Turkey</a></li>
-								<li><a href="/ae/{{ sort }}{% if size %}/{{ size }}{% endif %}">United Arab Emirates</a></li>
-								<li><a href="/uk/{{ sort }}{% if size %}/{{ size }}{% endif %}">United Kingdom</a></li>
-								<li class="dropdown-submenu">
-									<a href="/usa/{{ sort }}{% if size %}/{{ size }}{% endif %}">United States</a>
-									<ul id="us-states" class="dropdown-menu">
-										<li><a href="/al/{{ sort }}{% if size %}/{{ size }}{% endif %}">Alabama</a></li>
-										<li><a href="/ak/{{ sort }}{% if size %}/{{ size }}{% endif %}">Alaska</a></li>
-										<li><a href="/az/{{ sort }}{% if size %}/{{ size }}{% endif %}">Arizona</a></li>
-										<li><a href="/ar/{{ sort }}{% if size %}/{{ size }}{% endif %}">Arkansas</a></li>
-										<li><a href="/ca/{{ sort }}{% if size %}/{{ size }}{% endif %}">California</a></li>
-										<li><a href="/co/{{ sort }}{% if size %}/{{ size }}{% endif %}">Colorado</a></li>
-										<li><a href="/ct/{{ sort }}{% if size %}/{{ size }}{% endif %}">Connecticut</a></li>
-										<li><a href="/de/{{ sort }}{% if size %}/{{ size }}{% endif %}">Delaware</a></li>
-										<li><a href="/dc/{{ sort }}{% if size %}/{{ size }}{% endif %}">District of Columbia</a></li>
-										<li><a href="/fl/{{ sort }}{% if size %}/{{ size }}{% endif %}">Florida</a></li>
-										<li><a href="/ga/{{ sort }}{% if size %}/{{ size }}{% endif %}">Georgia</a></li>
-										<li><a href="/hi/{{ sort }}{% if size %}/{{ size }}{% endif %}">Hawaii</a></li>
-										<li><a href="/id/{{ sort }}{% if size %}/{{ size }}{% endif %}">Idaho</a></li>
-										<li><a href="/il/{{ sort }}{% if size %}/{{ size }}{% endif %}">Illinois</a></li>
-										<li><a href="/in/{{ sort }}{% if size %}/{{ size }}{% endif %}">Indiana</a></li>
-										<li><a href="/ia/{{ sort }}{% if size %}/{{ size }}{% endif %}">Iowa</a></li>
-										<li><a href="/ks/{{ sort }}{% if size %}/{{ size }}{% endif %}">Kansas</a></li>
-										<li><a href="/ky/{{ sort }}{% if size %}/{{ size }}{% endif %}">Kentucky</a></li>
-										<li><a href="/la/{{ sort }}{% if size %}/{{ size }}{% endif %}">Louisiana</a></li>
-										<li><a href="/me/{{ sort }}{% if size %}/{{ size }}{% endif %}">Maine</a></li>
-										<li><a href="/md/{{ sort }}{% if size %}/{{ size }}{% endif %}">Maryland</a></li>
-										<li><a href="/ma/{{ sort }}{% if size %}/{{ size }}{% endif %}">Massachusetts</a></li>
-										<li><a href="/mi/{{ sort }}{% if size %}/{{ size }}{% endif %}">Michigan</a></li>
-										<li><a href="/mn/{{ sort }}{% if size %}/{{ size }}{% endif %}">Minnesota</a></li>
-										<li><a href="/ms/{{ sort }}{% if size %}/{{ size }}{% endif %}">Mississippi</a></li>
-										<li><a href="/mo/{{ sort }}{% if size %}/{{ size }}{% endif %}">Missouri</a></li>
-										<li><a href="/mt/{{ sort }}{% if size %}/{{ size }}{% endif %}">Montana</a></li>
-										<li><a href="/ne/{{ sort }}{% if size %}/{{ size }}{% endif %}">Nebraska</a></li>
-										<li><a href="/nv/{{ sort }}{% if size %}/{{ size }}{% endif %}">Nevada</a></li>
-										<li><a href="/nh/{{ sort }}{% if size %}/{{ size }}{% endif %}">New Hampshire</a></li>
-										<li><a href="/nj/{{ sort }}{% if size %}/{{ size }}{% endif %}">New Jersey</a></li>
-										<li><a href="/nm/{{ sort }}{% if size %}/{{ size }}{% endif %}">New Mexico</a></li>
-										<li><a href="/ny/{{ sort }}{% if size %}/{{ size }}{% endif %}">New York</a></li>
-										<li><a href="/nc/{{ sort }}{% if size %}/{{ size }}{% endif %}">North Carolina</a></li>
-										<li><a href="/nd/{{ sort }}{% if size %}/{{ size }}{% endif %}">North Dakota</a></li>
-										<li><a href="/oh/{{ sort }}{% if size %}/{{ size }}{% endif %}">Ohio</a></li>
-										<li><a href="/ok/{{ sort }}{% if size %}/{{ size }}{% endif %}">Oklahoma</a></li>
-										<li><a href="/or/{{ sort }}{% if size %}/{{ size }}{% endif %}">Oregon</a></li>
-										<li><a href="/pa/{{ sort }}{% if size %}/{{ size }}{% endif %}">Pennsylvania</a></li>
-										<li><a href="/ri/{{ sort }}{% if size %}/{{ size }}{% endif %}">Rhode Island</a></li>
-										<li><a href="/sc/{{ sort }}{% if size %}/{{ size }}{% endif %}">South Carolina</a></li>
-										<li><a href="/sd/{{ sort }}{% if size %}/{{ size }}{% endif %}">South Dakota</a></li>
-										<li><a href="/tn/{{ sort }}{% if size %}/{{ size }}{% endif %}">Tennessee</a></li>
-										<li><a href="/tx/{{ sort }}{% if size %}/{{ size }}{% endif %}">Texas</a></li>
-										<li><a href="/ut/{{ sort }}{% if size %}/{{ size }}{% endif %}">Utah</a></li>
-										<li><a href="/vt/{{ sort }}{% if size %}/{{ size }}{% endif %}">Vermont</a></li>
-										<li><a href="/va/{{ sort }}{% if size %}/{{ size }}{% endif %}">Virginia</a></li>
-										<li><a href="/wa/{{ sort }}{% if size %}/{{ size }}{% endif %}">Washington</a></li>
-										<li><a href="/wv/{{ sort }}{% if size %}/{{ size }}{% endif %}">West Virginia</a></li>
-										<li><a href="/wi/{{ sort }}{% if size %}/{{ size }}{% endif %}">Wisconson</a></li>
-										<li><a href="/wy/{{ sort }}{% if size %}/{{ size }}{% endif %}">Wyoming</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-					</li>
-					<li>
-						<div class="btn-group sort-group">
-							<a class="btn{% ifnotequal sort 'old' %} active{% endifnotequal %}" id="new" href="/{{ filter|lower }}/new/{{ size }}"><i class="icon-chevron-down icon-white"></i></a>
-							<a class="btn{% ifequal sort 'old' %} active{% endifequal %}" id="old" href="/{{ filter|lower }}/old/{{ size }}"><i class="icon-chevron-up icon-white"></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="btn-group size-group">
-							<a class="btn{% ifnotequal size 'big' %} active{% endifnotequal %}" id="small" href="/{{ filter|lower }}/{{ sort }}/small"><i class="icon-th icon-white"></i></a>
-							<a class="btn{% ifequal size 'big' %} active{% endifequal %}" id="big" href="/{{ filter|lower }}/{{ sort }}/big"><i class="icon-th-large icon-white"></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="btn-group">
-							<a class="btn active" id="labels-button" href="#"><i class="icon-tag icon-white"></i></a>
-						</div>
-					</li>
-					<li>
-						<div class="btn-group">
-							<a class="btn" data-toggle="modal" href="#about">About</a>
-						</div>
-					</li>
-				</ul>
+        <ul class="nav" id="main-menu">
+          <li>
+            <div class="btn-group">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                {{ filter }}
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" data-no-collapse="true">
+                <li><a href="/all/{{ sort }}{% if size %}/{{ size }}{% endif %}">All</a></li>
+                <li><a href="/gallery/{{ sort }}{% if size %}/{{ size }}{% endif %}">Gallery</a></li>
+                <li class="divider"></li>
+                <li><a href="/australia/{{ sort }}{% if size %}/{{ size }}{% endif %}">Australia</a></li>
+                <li><a href="/belgium/{{ sort }}{% if size %}/{{ size }}{% endif %}">Belgium</a></li>
+                <li><a href="/brazil/{{ sort }}{% if size %}/{{ size }}{% endif %}">Brazil</a></li>
+                <li class="dropdown-submenu">
+                  <a href="/canada/{{ sort }}{% if size %}/{{ size }}{% endif %}">Canada</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/alberta/{{ sort }}{% if size %}/{{ size }}{% endif %}">Alberta</a></li>
+                    <li><a href="/british_columbia/{{ sort }}{% if size %}/{{ size }}{% endif %}">British Columbia</a></li>
+                    <li><a href="/manitoba/{{ sort }}{% if size %}/{{ size }}{% endif %}">Manitoba</a></li>
+                    <li><a href="/nova_scotia/{{ sort }}{% if size %}/{{ size }}{% endif %}">Nova Scotia</a></li>
+                    <li><a href="/ontario/{{ sort }}{% if size %}/{{ size }}{% endif %}">Ontario</a></li>
+                    <li><a href="/quebec/{{ sort }}{% if size %}/{{ size }}{% endif %}">Quebec</a></li>
+                  </ul>
+                </li>
+                <li><a href="/china/{{ sort }}{% if size %}/{{ size }}{% endif %}">China</a></li>
+                <li><a href="/france/{{ sort }}{% if size %}/{{ size }}{% endif %}">France</a></li>
+                <li><a href="/germany/{{ sort }}{% if size %}/{{ size }}{% endif %}">Germany</a></li>
+                <li><a href="/italy/{{ sort }}{% if size %}/{{ size }}{% endif %}">Italy</a></li>
+                <li><a href="/japan/{{ sort }}{% if size %}/{{ size }}{% endif %}">Japan</a></li>
+                <li><a href="/korea/{{ sort }}{% if size %}/{{ size }}{% endif %}">Korea</a></li>
+                <li><a href="/mexico/{{ sort }}{% if size %}/{{ size }}{% endif %}">Mexico</a></li>
+                <li><a href="/netherlands/{{ sort }}{% if size %}/{{ size }}{% endif %}">Netherlands</a></li>
+                <li><a href="/singapore/{{ sort }}{% if size %}/{{ size }}{% endif %}">Singapore</a></li>
+                <li><a href="/spain/{{ sort }}{% if size %}/{{ size }}{% endif %}">Spain</a></li>
+                <li><a href="/sweden/{{ sort }}{% if size %}/{{ size }}{% endif %}">Sweden</a></li>
+                <li><a href="/switzerland/{{ sort }}{% if size %}/{{ size }}{% endif %}">Switzerland</a></li>
+                <li><a href="/taiwan/{{ sort }}{% if size %}/{{ size }}{% endif %}">Taiwan</a></li>
+                <li><a href="/turkey/{{ sort }}{% if size %}/{{ size }}{% endif %}">Turkey</a></li>
+                <li><a href="/ae/{{ sort }}{% if size %}/{{ size }}{% endif %}">United Arab Emirates</a></li>
+                <li><a href="/uk/{{ sort }}{% if size %}/{{ size }}{% endif %}">United Kingdom</a></li>
+                <li class="dropdown-submenu">
+                  <a href="/usa/{{ sort }}{% if size %}/{{ size }}{% endif %}">United States</a>
+                  <ul id="us-states" class="dropdown-menu">
+                    <li><a href="/al/{{ sort }}{% if size %}/{{ size }}{% endif %}">Alabama</a></li>
+                    <li><a href="/ak/{{ sort }}{% if size %}/{{ size }}{% endif %}">Alaska</a></li>
+                    <li><a href="/az/{{ sort }}{% if size %}/{{ size }}{% endif %}">Arizona</a></li>
+                    <li><a href="/ar/{{ sort }}{% if size %}/{{ size }}{% endif %}">Arkansas</a></li>
+                    <li><a href="/ca/{{ sort }}{% if size %}/{{ size }}{% endif %}">California</a></li>
+                    <li><a href="/co/{{ sort }}{% if size %}/{{ size }}{% endif %}">Colorado</a></li>
+                    <li><a href="/ct/{{ sort }}{% if size %}/{{ size }}{% endif %}">Connecticut</a></li>
+                    <li><a href="/de/{{ sort }}{% if size %}/{{ size }}{% endif %}">Delaware</a></li>
+                    <li><a href="/dc/{{ sort }}{% if size %}/{{ size }}{% endif %}">District of Columbia</a></li>
+                    <li><a href="/fl/{{ sort }}{% if size %}/{{ size }}{% endif %}">Florida</a></li>
+                    <li><a href="/ga/{{ sort }}{% if size %}/{{ size }}{% endif %}">Georgia</a></li>
+                    <li><a href="/hi/{{ sort }}{% if size %}/{{ size }}{% endif %}">Hawaii</a></li>
+                    <li><a href="/id/{{ sort }}{% if size %}/{{ size }}{% endif %}">Idaho</a></li>
+                    <li><a href="/il/{{ sort }}{% if size %}/{{ size }}{% endif %}">Illinois</a></li>
+                    <li><a href="/in/{{ sort }}{% if size %}/{{ size }}{% endif %}">Indiana</a></li>
+                    <li><a href="/ia/{{ sort }}{% if size %}/{{ size }}{% endif %}">Iowa</a></li>
+                    <li><a href="/ks/{{ sort }}{% if size %}/{{ size }}{% endif %}">Kansas</a></li>
+                    <li><a href="/ky/{{ sort }}{% if size %}/{{ size }}{% endif %}">Kentucky</a></li>
+                    <li><a href="/la/{{ sort }}{% if size %}/{{ size }}{% endif %}">Louisiana</a></li>
+                    <li><a href="/me/{{ sort }}{% if size %}/{{ size }}{% endif %}">Maine</a></li>
+                    <li><a href="/md/{{ sort }}{% if size %}/{{ size }}{% endif %}">Maryland</a></li>
+                    <li><a href="/ma/{{ sort }}{% if size %}/{{ size }}{% endif %}">Massachusetts</a></li>
+                    <li><a href="/mi/{{ sort }}{% if size %}/{{ size }}{% endif %}">Michigan</a></li>
+                    <li><a href="/mn/{{ sort }}{% if size %}/{{ size }}{% endif %}">Minnesota</a></li>
+                    <li><a href="/ms/{{ sort }}{% if size %}/{{ size }}{% endif %}">Mississippi</a></li>
+                    <li><a href="/mo/{{ sort }}{% if size %}/{{ size }}{% endif %}">Missouri</a></li>
+                    <li><a href="/mt/{{ sort }}{% if size %}/{{ size }}{% endif %}">Montana</a></li>
+                    <li><a href="/ne/{{ sort }}{% if size %}/{{ size }}{% endif %}">Nebraska</a></li>
+                    <li><a href="/nv/{{ sort }}{% if size %}/{{ size }}{% endif %}">Nevada</a></li>
+                    <li><a href="/nh/{{ sort }}{% if size %}/{{ size }}{% endif %}">New Hampshire</a></li>
+                    <li><a href="/nj/{{ sort }}{% if size %}/{{ size }}{% endif %}">New Jersey</a></li>
+                    <li><a href="/nm/{{ sort }}{% if size %}/{{ size }}{% endif %}">New Mexico</a></li>
+                    <li><a href="/ny/{{ sort }}{% if size %}/{{ size }}{% endif %}">New York</a></li>
+                    <li><a href="/nc/{{ sort }}{% if size %}/{{ size }}{% endif %}">North Carolina</a></li>
+                    <li><a href="/nd/{{ sort }}{% if size %}/{{ size }}{% endif %}">North Dakota</a></li>
+                    <li><a href="/oh/{{ sort }}{% if size %}/{{ size }}{% endif %}">Ohio</a></li>
+                    <li><a href="/ok/{{ sort }}{% if size %}/{{ size }}{% endif %}">Oklahoma</a></li>
+                    <li><a href="/or/{{ sort }}{% if size %}/{{ size }}{% endif %}">Oregon</a></li>
+                    <li><a href="/pa/{{ sort }}{% if size %}/{{ size }}{% endif %}">Pennsylvania</a></li>
+                    <li><a href="/ri/{{ sort }}{% if size %}/{{ size }}{% endif %}">Rhode Island</a></li>
+                    <li><a href="/sc/{{ sort }}{% if size %}/{{ size }}{% endif %}">South Carolina</a></li>
+                    <li><a href="/sd/{{ sort }}{% if size %}/{{ size }}{% endif %}">South Dakota</a></li>
+                    <li><a href="/tn/{{ sort }}{% if size %}/{{ size }}{% endif %}">Tennessee</a></li>
+                    <li><a href="/tx/{{ sort }}{% if size %}/{{ size }}{% endif %}">Texas</a></li>
+                    <li><a href="/ut/{{ sort }}{% if size %}/{{ size }}{% endif %}">Utah</a></li>
+                    <li><a href="/vt/{{ sort }}{% if size %}/{{ size }}{% endif %}">Vermont</a></li>
+                    <li><a href="/va/{{ sort }}{% if size %}/{{ size }}{% endif %}">Virginia</a></li>
+                    <li><a href="/wa/{{ sort }}{% if size %}/{{ size }}{% endif %}">Washington</a></li>
+                    <li><a href="/wv/{{ sort }}{% if size %}/{{ size }}{% endif %}">West Virginia</a></li>
+                    <li><a href="/wi/{{ sort }}{% if size %}/{{ size }}{% endif %}">Wisconson</a></li>
+                    <li><a href="/wy/{{ sort }}{% if size %}/{{ size }}{% endif %}">Wyoming</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group sort-group">
+              <a class="btn{% ifnotequal sort 'old' %} active{% endifnotequal %}" id="new" href="/{{ filter|lower }}/new/{{ size }}"><i class="icon-chevron-down icon-white"></i></a>
+              <a class="btn{% ifequal sort 'old' %} active{% endifequal %}" id="old" href="/{{ filter|lower }}/old/{{ size }}"><i class="icon-chevron-up icon-white"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group size-group">
+              <a class="btn{% ifnotequal size 'big' %} active{% endifnotequal %}" id="small" href="/{{ filter|lower }}/{{ sort }}/small"><i class="icon-th icon-white"></i></a>
+              <a class="btn{% ifequal size 'big' %} active{% endifequal %}" id="big" href="/{{ filter|lower }}/{{ sort }}/big"><i class="icon-th-large icon-white"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group">
+              <a class="btn active" id="labels-button" href="#"><i class="icon-tag icon-white"></i></a>
+            </div>
+          </li>
+          <li>
+            <div class="btn-group">
+              <a class="btn" data-toggle="modal" href="#about">About</a>
+            </div>
+          </li>
+        </ul>
 
-				<ul class="nav pull-right" id="right-menu">
-					<li class="twitter-item"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://applestorefronts.appspot.com" data-via="thomashpark">Tweet</a></li>
-					<li class="fb-like" data-href="http://applestorefronts.appspot.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="container">
+        <ul class="nav pull-right" id="right-menu">
+          <li class="twitter-item"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://applestorefronts.appspot.com" data-via="thomashpark">Tweet</a></li>
+          <li class="fb-like" data-href="http://applestorefronts.appspot.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
 
-		<div class="row">
-
-			{% for store in stores %}
-
-			<div id="{{ store.1 }}" class="{% ifequal size 'big' %}span6 {% else %}span4 {% endifequal %}store {{ store.7 }}{% if store.4 %} {{ store.4 }}{% endif %} {{ store.5 }}">
-
-				<div class="photo">
-					<a target="_blank" href="{{ store.10 }}">
-						<img data-href="{{ store.11 }}" src="/img/blank.png" alt="{{ store.2 }}" onerror="imgError(this);">
-					</a>
-				</div>
-
-				<div class="ribbon">
-					<p><strong><a class="anchor" data-href="#{{ store.1 }}" href="#{{ store.1 }}">#{{ store.0 }} {{ store.2 }}</a></strong> <span class="rnum">R{{ store.8 }}</span>{% if store.9 %}<span class="pull-right"><i title="Gallery" class="icon-camera"></i></span>{% endif %}</p>
-					<p>{{ store.3 }}{% if store.4 %}, <a href="/{{ store.4.split|join:"_"|lower }}/{{ sort }}{% if size %}/{{ size }}{% endif %}">{{ store.4 }}</a>{% endif %}, <a href="/{{ store.5|lower }}/{{ sort }}{% if size %}/{{ size }}{% endif %}">{{ store.5 }}</a></p>
-					<p>Opened: <a href="/{{ store.7 }}/{{ sort }}{% if size %}/{{ size }}{% endif %}">{{ store.6 }}</a></p>
-				</div>
-
-			</div>
-
-			{% endfor %}
-
-		</div>
-	</div>
+  <div class="container">
 
 
-	<div class="modal hide fade" id="about">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">×</button>
-		</div>
-		<div class="modal-body">
-			<p>Apple Storefronts is made by <a target="_blank" href="http://thomaspark.co" onclick="pageTracker._link(this.href); return false;">Thomas Park</a>. Contact him by <a href="mailto:hello@thomaspark.co">email</a> or <a target="_blank" href="http://twitter.com/thomashpark">Twitter</a>, or <a target="_blank" href="http://thomaspark.co/2012/07/apple-storefronts-redux/" onclick="pageTracker._link(this.href); return false;">read more</a> about this site.</p>
+    <div class="row">
 
-			<p>Images from <a target="_blank" href="http://apple.com">Apple</a>. Data courtesy of <a target="_blank" href="http://www.ifoapplestore.com/">ifoAppleStore</a>.</p>
+      {% for store in stores %}
 
-			<p>Built using <a target="_blank" href="https://developers.google.com/appengine/">Google App Engine</a>, <a target="_blank" href="http://twitter.github.com/bootstrap/">Bootstrap</a> with <a target="_blank" href="http://bootswatch.com/" onclick="pageTracker._link(this.href); return false;">Bootswatch</a>, and <a target="_blank" href="http://jquery.com/">jQuery</a> with <a target="_blank" href="https://github.com/sebarmeli/JAIL">Jail</a>. Background image from <a target="_blank" href="http://subtlepatterns.com/">Subtle Patterns</a>.</p>
+      <div id="{{ store.1 }}" class="{% ifequal size 'big' %}span6 {% else %}span4 {% endifequal %}store {{ store.7 }}{% if store.4 %} {{ store.4 }}{% endif %} {{ store.5 }}">
 
-			<div class="well" style="padding: 15px 15px 0 15px;">
-				<a href="http://carboncostume.com/apple-store-genius/" target="_blank">
-				  <span style="float: left; margin: 0 15px 15px 0;">
-					<img src="/img/carboncostume.png" width="175" height="135" style="border-radius: 3px;">
-				  </span>
-				</a>
-				<a href="http://carboncostume.com/apple-store-genius/" target="_blank">
-				  <h5 style="margin-bottom: 0.4em; color: #fff;">Carbon Costume</h5>
-				  <span style="display: block; margin-bottom: 1em; color: #fff;">DIY costumes using everyday gear.</span>
-				</a>
-				<div style="clear:both"></div>
-			</div>
+        <div class="photo">
+          <a target="_blank" href="{{ store.10 }}">
+            <img data-href="{{ store.11 }}" src="/img/blank.png" alt="{{ store.2 }}" onerror="imgError(this);">
+          </a>
+        </div>
 
-		</div>
-	</div>
+        <div class="ribbon">
+          <p><strong><a class="anchor" data-href="#{{ store.1 }}" href="#{{ store.1 }}">#{{ store.0 }} {{ store.2 }}</a></strong> <span class="rnum">R{{ store.8 }}</span>{% if store.9 %}<span class="pull-right"><i title="Gallery" class="icon-camera"></i></span>{% endif %}</p>
+          <p>{{ store.3 }}{% if store.4 %}, <a href="/{{ store.4.split|join:"_"|lower }}/{{ sort }}{% if size %}/{{ size }}{% endif %}">{{ store.4 }}</a>{% endif %}, <a href="/{{ store.5|lower }}/{{ sort }}{% if size %}/{{ size }}{% endif %}">{{ store.5 }}</a></p>
+          <p>Opened: <a href="/{{ store.7 }}/{{ sort }}{% if size %}/{{ size }}{% endif %}">{{ store.6 }}</a></p>
+        </div>
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script src="/js/jail.0.9.5.min.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-	<script src="/js/scripts.js"></script>
+      </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+
+
+  <div class="modal hide fade" id="about">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">×</button>
+    </div>
+    <div class="modal-body">
+      <p>Apple Storefronts is made by <a target="_blank" href="http://thomaspark.co" onclick="pageTracker._link(this.href); return false;">Thomas Park</a>. Contact him by <a href="mailto:hello@thomaspark.co">email</a> or <a target="_blank" href="http://twitter.com/thomashpark">Twitter</a>, or <a target="_blank" href="http://thomaspark.co/2012/07/apple-storefronts-redux/" onclick="pageTracker._link(this.href); return false;">read more</a> about this site.</p>
+
+      <p>Images from <a target="_blank" href="http://apple.com">Apple</a>. Data courtesy of <a target="_blank" href="http://www.ifoapplestore.com/">ifoAppleStore</a>.</p>
+
+      <p>Built using <a target="_blank" href="https://developers.google.com/appengine/">Google App Engine</a>, <a target="_blank" href="http://twitter.github.com/bootstrap/">Bootstrap</a> with <a target="_blank" href="http://bootswatch.com/" onclick="pageTracker._link(this.href); return false;">Bootswatch</a>, and <a target="_blank" href="http://jquery.com/">jQuery</a> with <a target="_blank" href="https://github.com/sebarmeli/JAIL">Jail</a>. Background image from <a target="_blank" href="http://subtlepatterns.com/">Subtle Patterns</a>.</p>
+
+      <div class="well" style="padding: 15px 15px 0 15px;">
+        <a href="http://carboncostume.com/apple-store-genius/" target="_blank">
+          <span style="float: left; margin: 0 15px 15px 0;">
+          <img src="/img/carboncostume.png" width="175" height="135" style="border-radius: 3px;">
+          </span>
+        </a>
+        <a href="http://carboncostume.com/apple-store-genius/" target="_blank">
+          <h5 style="margin-bottom: 0.4em; color: #fff;">Carbon Costume</h5>
+          <span style="display: block; margin-bottom: 1em; color: #fff;">DIY costumes using everyday gear.</span>
+        </a>
+        <div style="clear:both"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/jail.0.9.5.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/scripts.js"></script>
 
 </body>
 </html>
