@@ -114,7 +114,10 @@ def makeLinks(id, country, city):
     elif country == 'Taiwan':
         prefix = prefix + 'tw/'
 
-    return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://images.apple.com/' + prefix + 'retail/' + id + '/images/' + suffix]
+    if id == 'downtownbrooklyn':
+        return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://images.apple.com/' + prefix + 'retail/' + id + '/images/' + 'hero_large.png']
+    else:
+        return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://images.apple.com/' + prefix + 'retail/' + id + '/images/' + suffix]
 
 reader = csv.reader(open("stores.csv", "U"))
 
