@@ -113,6 +113,8 @@ def makeLinks(id, country, city):
         prefix = prefix + 'sg/'
     elif country == 'Taiwan':
         prefix = prefix + 'tw/'
+    elif country == 'Austria':
+        prefix = prefix + 'at/'
 
     if id == 'downtownbrooklyn':
         return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://images.apple.com/' + prefix + 'retail/' + id + '/images/' + 'hero_large.png']
