@@ -68,20 +68,16 @@ def makeLinks(id, country, city):
 
     if country == 'UK':
         prefix = prefix + 'uk/'
-    elif country == 'Canada':
-        prefix = prefix + 'ca/'
     elif country == 'Australia':
         prefix = prefix + 'au/'
-    elif country == 'France':
-        prefix = prefix + 'fr/'
-    elif country == 'Italy':
-        prefix = prefix + 'it/'
-    elif country == 'Germany':
-        prefix = prefix + 'de/'
-    elif country == 'Japan':
-        prefix = prefix + 'jp/'
-    elif country == 'Korea':
-        prefix = prefix + 'kr/'
+    elif country == 'Austria':
+        prefix = prefix + 'at/'
+    elif country == 'Belgium':
+        prefix = prefix + 'befr/'
+    elif country == 'Brazil':
+        prefix = prefix + 'br/'
+    elif country == 'Canada':
+        prefix = prefix + 'ca/'
     elif country == 'China':
         if city == 'Hong Kong':
             prefix = prefix + 'hk/'
@@ -89,32 +85,36 @@ def makeLinks(id, country, city):
             prefix = prefix + 'mo/'
         else:
             prefix = prefix + 'cn/'
+    elif country == 'France':
+        prefix = prefix + 'fr/'
+    elif country == 'Germany':
+        prefix = prefix + 'de/'
+    elif country == 'Italy':
+        prefix = prefix + 'it/'
+    elif country == 'Japan':
+        prefix = prefix + 'jp/'
+    elif country == 'Korea':
+        prefix = prefix + 'kr/'
+    elif country == 'Mexico':
+        prefix = prefix + 'mx/'
+    elif country == 'Netherlands':
+        prefix = prefix + 'nl/'
+    elif country == 'Singapore':
+        prefix = prefix + 'sg/'
     elif country == 'Spain':
         prefix = prefix + 'es/'
     elif country == 'Sweden':
         prefix = prefix + 'se/'
     elif country == 'Switzerland':
         prefix = prefix + 'chde/'
-    elif country == 'Netherlands':
-        prefix = prefix + 'nl/'
-    elif country == 'Brazil':
-        prefix = prefix + 'br/'
-    elif country == 'Turkey':
-        prefix = prefix + 'tr/'
-    elif country == 'Belgium':
-        prefix = prefix + 'befr/'
-    elif country == 'United Arab Emirates':
-        prefix = prefix + 'ae/'
-    elif country == 'Macao':
-        prefix = prefix + 'mo/'
-    elif country == 'Mexico':
-        prefix = prefix + 'mx/'
-    elif country == 'Singapore':
-        prefix = prefix + 'sg/'
     elif country == 'Taiwan':
         prefix = prefix + 'tw/'
-    elif country == 'Austria':
-        prefix = prefix + 'at/'
+    elif country == 'Thailand':
+        prefix = prefix + 'th/'
+    elif country == 'Turkey':
+        prefix = prefix + 'tr/'
+    elif country == 'United Arab Emirates':
+        prefix = prefix + 'ae/'
 
     if id in ['garosugil', 'crabtreevalleymall']:
         return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://images.apple.com/' + prefix + 'retail/' + id + '/images/' + 'hero_large.png']
