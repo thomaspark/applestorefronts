@@ -126,7 +126,7 @@ reader = csv.reader(open("stores.csv", "U"))
 stores_oldest = []
 
 for idx, row in enumerate(reader):
-    row[0] = idx + 1
+    row.insert(0, idx+1)
     stores_oldest.append(row)
 
 for store in stores_oldest:
