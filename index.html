@@ -12,6 +12,7 @@
   <link rel="canonical" href="http://applestorefronts.appspot.com/{% ifnotequal filter 'All' %}{{ filter|lower }}/{% endifnotequal %}">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="/vendor/font-awesome/css/all.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
   <link rel="apple-touch-icon" sizes="144x144" href="img/icon-144x144.png">
@@ -157,19 +158,19 @@
           </li>
           <li>
             <div class="btn-group sort-group">
-              <a class="btn{% ifnotequal sort 'old' %} active{% endifnotequal %}" id="new" href="/{{ filter|lower }}/new/{{ size }}"><i class="icon-chevron-down icon-white"></i></a>
-              <a class="btn{% ifequal sort 'old' %} active{% endifequal %}" id="old" href="/{{ filter|lower }}/old/{{ size }}"><i class="icon-chevron-up icon-white"></i></a>
+              <a class="btn{% ifnotequal sort 'old' %} active{% endifnotequal %}" id="new" href="/{{ filter|lower }}/new/{{ size }}"><i class="fas fa-chevron-down"></i></a>
+              <a class="btn{% ifequal sort 'old' %} active{% endifequal %}" id="old" href="/{{ filter|lower }}/old/{{ size }}"><i class="fas fa-chevron-up"></i></a>
             </div>
           </li>
           <li>
             <div class="btn-group size-group">
-              <a class="btn{% ifnotequal size 'big' %} active{% endifnotequal %}" id="small" href="/{{ filter|lower }}/{{ sort }}/small"><i class="icon-th icon-white"></i></a>
-              <a class="btn{% ifequal size 'big' %} active{% endifequal %}" id="big" href="/{{ filter|lower }}/{{ sort }}/big"><i class="icon-th-large icon-white"></i></a>
+              <a class="btn{% ifnotequal size 'big' %} active{% endifnotequal %}" id="small" href="/{{ filter|lower }}/{{ sort }}/small"><i class="fas fa-th"></i></a>
+              <a class="btn{% ifequal size 'big' %} active{% endifequal %}" id="big" href="/{{ filter|lower }}/{{ sort }}/big"><i class="fas fa-th-large"></i></a>
             </div>
           </li>
           <li>
             <div class="btn-group">
-              <a class="btn active" id="labels-button" href="#"><i class="icon-tag icon-white"></i></a>
+              <a class="btn active" id="labels-button" href="#"><i class="fas fa-tag"></i></a>
             </div>
           </li>
           <li>
@@ -204,7 +205,7 @@
         </div>
 
         <div class="ribbon">
-          <p><strong><a class="anchor" data-href="#{{ store.1 }}" href="#{{ store.1 }}">#{{ store.0 }} {{ store.2 }}</a></strong> <span class="rnum">R{{ store.8 }}</span>{% if store.9 %}<span class="pull-right"><i title="Gallery" class="icon-camera"></i></span>{% endif %}</p>
+          <p><strong><a class="anchor" data-href="#{{ store.1 }}" href="#{{ store.1 }}">#{{ store.0 }} {{ store.2 }}</a></strong> <span class="rnum">R{{ store.8 }}</span>{% if store.9 %}<span class="pull-right"><i title="Gallery" class="fas fa-camera"></i></span>{% endif %}</p>
           <p>{{ store.3 }}{% if store.4 %}, <a href="/{{ store.4.split|join:"_"|lower }}/{{ sort }}{% if size %}/{{ size }}{% endif %}">{{ store.4 }}</a>{% endif %}, <a href="/{{ store.5|lower }}/{{ sort }}{% if size %}/{{ size }}{% endif %}">{{ store.5 }}</a></p>
           <p>Opened: <a href="/{{ store.7 }}/{{ sort }}{% if size %}/{{ size }}{% endif %}">{{ store.6 }}</a></p>
         </div>

@@ -13,6 +13,9 @@ handlers:
 - url: /img
   static_dir: img
 
+- url: /vendor
+  static_dir: vendor
+
 - url: /.*
   script: app.py
   secure: always
