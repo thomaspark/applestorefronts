@@ -116,7 +116,7 @@ def makeLinks(id, country, city):
     elif country == 'United Arab Emirates':
         prefix = prefix + 'ae/'
 
-    if id in ['crabtreevalleymall']:
+    if id in ['crabtreevalleymall', 'centralworld']:
         return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://images.apple.com/' + prefix + 'retail/' + id + '/images/' + 'hero_large.png']
     else:
         return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://images.apple.com/' + prefix + 'retail/' + id + '/images/' + suffix]
