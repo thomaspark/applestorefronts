@@ -61,8 +61,10 @@ application = webapp.WSGIApplication(
                                      debug=True)
 
 
-def makeLinks(id, country, city):
-
+def makeLinks(id, country, city, rnum):
+    width = '1440'
+    height = '806'
+    
     prefix = ''
     suffix = 'hero_large.jpg'
 
@@ -116,10 +118,7 @@ def makeLinks(id, country, city):
     elif country == 'United Arab Emirates':
         prefix = prefix + 'ae/'
 
-    if id in ['crabtreevalleymall', 'centralworld']:
-        return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://images.apple.com/' + prefix + 'retail/' + id + '/images/' + 'hero_large.png']
-    else:
-        return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://images.apple.com/' + prefix + 'retail/' + id + '/images/' + suffix]
+    return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://rtlimages.apple.com/cmc/dieter/store/16_9/R' + rnum + '.png?resize=' + width + ':' + height + '&output-format=jpg&output-quality=85&interpolation=progressive-bicubic']
 
 reader = csv.reader(open("stores.csv", "U"))
 
@@ -130,7 +129,7 @@ for idx, row in enumerate(reader):
     stores_oldest.append(row)
 
 for store in stores_oldest:
-    store.extend(makeLinks(store[1], store[5], store[3]))
+    store.extend(makeLinks(store[1], store[5], store[3], store[8]))
 
 stores_newest = stores_oldest[::-1]
 
