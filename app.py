@@ -91,6 +91,8 @@ def makeLinks(id, country, city, rnum):
         prefix = prefix + 'fr/'
     elif country == 'Germany':
         prefix = prefix + 'de/'
+    elif country == 'India':
+        prefix = prefix + 'in/'
     elif country == 'Italy':
         prefix = prefix + 'it/'
     elif country == 'Japan':
