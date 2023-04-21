@@ -120,7 +120,10 @@ def makeLinks(id, country, city, rnum):
     elif country == 'United Arab Emirates':
         prefix = prefix + 'ae/'
 
-    return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://rtlimages.apple.com/cmc/dieter/store/16_9/R' + rnum + '.png?resize=' + width + ':' + height + '&output-format=jpg&output-quality=85&interpolation=progressive-bicubic']
+    if rnum == '469':
+        return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://rtlimages.apple.com/cmc/dieter/store/16_9/R' + rnum + '.png?output-format=jpg&output-quality=85&interpolation=progressive-bicubic']
+    else:
+        return ['https://www.apple.com/' + prefix + 'retail/' + id + '/', 'https://rtlimages.apple.com/cmc/dieter/store/16_9/R' + rnum + '.png?resize=' + width + ':' + height + '&output-format=jpg&output-quality=85&interpolation=progressive-bicubic']
 
 reader = csv.reader(open("stores.csv", "U"))
 
