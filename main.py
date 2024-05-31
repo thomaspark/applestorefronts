@@ -54,6 +54,8 @@ def makeLinks(id, country, city, rnum):
         prefix = prefix + 'jp/'
     elif country == 'Korea':
         prefix = prefix + 'kr/'
+    elif country == 'Malaysia':
+        prefix = prefix + 'my/'
     elif country == 'Mexico':
         prefix = prefix + 'mx/'
     elif country == 'Netherlands':
