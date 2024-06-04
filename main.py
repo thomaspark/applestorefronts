@@ -110,11 +110,15 @@ def front():
     filter = request.args.get("filter")
     size = request.args.get("size")
     sort = request.args.get("sort")
+    year = request.args.get("year")
 
     if sort == 'old':
         stores = stores_oldest
     else:
         stores = stores_newest
+
+    if year is not None:
+        stores = [store for store in stores if year == store[7]]
 
     if "filter" in request.args:
         filter = request.args.get("filter")
@@ -123,10 +127,10 @@ def front():
             stores = [item for item in stores if item[9] == filter]
         else:
             filter = capitalize(filter)
-            stores = [item for item in stores if (item[5] == filter) or (item[4].lower() == filter.lower()) or (item[7] == filter)]
+            stores = [item for item in stores if (item[5] == filter) or (item[4].lower() == filter.lower())]
 
 
-    return render_template("index.html", stores=stores, size = size, sort = sort)
+    return render_template("index.html", stores=stores, size = size, sort = sort, year = year)
 
 
 if __name__ == "__main__":
