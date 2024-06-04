@@ -56,6 +56,7 @@ def makeLinks(id, country, city, rnum):
         prefix = prefix + 'kr/'
     elif country == 'Malaysia':
         prefix = prefix + 'my/'
+        return ['https://apple.com/' + prefix + id + '/', 'https://rtlimages.apple.com/cmc/dieter/store/16_9/R' + rnum + '.png?resize=' + width + ':' + height + '&output-format=jpg&output-quality=85&interpolation=progressive-bicubic']
     elif country == 'Mexico':
         prefix = prefix + 'mx/'
     elif country == 'Netherlands':
