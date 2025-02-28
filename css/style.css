@@ -5,6 +5,10 @@ body {
 	font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.navbar-inner {
+	padding-top: 3px;
+}
+
 .navbar .nav {
 	margin: 0;
 }
@@ -23,7 +27,7 @@ body {
 }
 
 #logo a {
-	padding: 11px 10px 9px;
+	padding: 9px 10px;
 	font-size: 17px;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
