@@ -125,7 +125,7 @@ def front():
 
         if (filter == 'gallery'):
             stores = [item for item in stores if item[9] == filter]
-        else:
+        elif len(filter.strip()) > 0:
             filter = capitalize(filter)
             stores = [item for item in stores if (item[5] == filter) or (item[4].lower() == filter.lower())]
 
