@@ -21,8 +21,6 @@
     <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
   <script>
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-23019901-2']);
@@ -54,12 +52,12 @@
           <li class=""><a href="/">Apple Storefronts</a></li>
         </ul>
 
-        <ul class="nav" id="main-menu">
+        <ul class="nav pull-right" id="main-menu">
           <li>
             <div class="btn-group">
-              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" title="Filter by Location" href="#">
                 {{ filter }}
-                <span class="caret"></span>
+                <i class="fa-solid fa-filter"></i>
               </a>
               <ul class="dropdown-menu" data-no-collapse="true">
                 <li><a href="{{ modify_query(filter = null) }}">All</a></li>
@@ -160,32 +158,28 @@
           </li>
           <li>
             <div class="btn-group sort-group">
-              <a class="btn{% if sort != 'old' %} active{% endif %}" id="new" href="{{ modify_query(sort = "new") }}"><i class="fas fa-chevron-down"></i></a>
-              <a class="btn{% if sort == 'old' %} active{% endif %}" id="old" href="{{ modify_query(sort = "old") }}"><i class="fas fa-chevron-up"></i></a>
+              <a class="btn{% if sort != 'old' %} active{% endif %}" id="new" title="Sort Newest First" href="{{ modify_query(sort = "new") }}"><i class="fas fa-chevron-down"></i></a>
+              <a class="btn{% if sort == 'old' %} active{% endif %}" id="old" title="Sort Oldest First" href="{{ modify_query(sort = "old") }}"><i class="fas fa-chevron-up"></i></a>
             </div>
           </li>
           <li>
             <div class="btn-group size-group">
-              <a class="btn{% if size != 'big' %} active{% endif %}" id="small" href="{{ modify_query(size = "small") }}"><i class="fas fa-th"></i></a>
-              <a class="btn{% if size == 'big' %} active{% endif %}" id="big" href="{{ modify_query(size = "big") }}"><i class="fas fa-th-large"></i></a>
+              <a class="btn{% if size != 'big' %} active{% endif %}" id="small" title="Small Grid" href="{{ modify_query(size = "small") }}"><i class="fa-solid fa-grid"></i></a>
+              <a class="btn{% if size == 'big' %} active{% endif %}" id="big" title="Big Grid" href="{{ modify_query(size = "big") }}"><i class="fa-solid fa-grid-2"></i></a>
             </div>
           </li>
           <li>
             <div class="btn-group">
-              <a class="btn active" id="labels-button" href="#"><i class="fas fa-tag"></i></a>
+              <a class="btn active" id="labels-button" title="Toggle Captions" href="#"><i class="fas fa-subtitles"></i></a>
             </div>
           </li>
           <li>
             <div class="btn-group">
-              <a class="btn" data-toggle="modal" href="#about">About</a>
+              <a class="btn" data-toggle="modal" title="About" href="#about"><i class="fa-solid fa-circle-info"></i></a>
             </div>
           </li>
         </ul>
 
-        <ul class="nav pull-right" id="right-menu">
-          <li class="twitter-item"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://applestorefronts.appspot.com" data-via="thomashpark">Tweet</a></li>
-          <li class="fb-like" data-href="http://applestorefronts.appspot.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></li>
-        </ul>
       </div>
     </div>
   </div>
@@ -230,6 +224,11 @@
       <p>Images from <a target="_blank" href="https://apple.com">Apple</a>. Data courtesy of <a target="_blank" href="http://www.ifoapplestore.com/">ifoAppleStore</a>.</p>
 
       <p>Built using <a target="_blank" href="https://cloud.google.com/appengine/">Google App Engine</a>, <a target="_blank" href="https://getbootstrap.com/">Bootstrap</a> with <a target="_blank" href="https://bootswatch.com/" onclick="pageTracker._link(this.href); return false;">Bootswatch</a>, and <a target="_blank" href="https://jquery.com/">jQuery</a> with <a target="_blank" href="https://github.com/sebarmeli/JAIL">Jail</a>. Background image from <a target="_blank" href="https://subtlepatterns.com/">Subtle Patterns</a>.</p>
+
+
+      <div id="social">
+        <div class="fb-like" data-href="http://applestorefronts.appspot.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+      </div>
     </div>
   </div>
 

@@ -5,11 +5,6 @@ body {
 	font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-iframe {
-	margin-top: 9px;
-	margin-left: 5px;
-}
-
 .navbar .nav {
 	margin: 0;
 }
@@ -151,16 +146,9 @@ iframe {
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
 }
 
-.twitter-item {
-	width: 70px;
-}
-
-.fb-like,
-.fb_iframe_widget,
-li.fb-like.fb_iframe_widget.fb_iframe_widget_fluid {
-	width: 80px !important;
-	display: block !important;
-	margin-right: 1em;
+#social {
+	margin-top: 3rem;
+	text-align: center;
 }
 
 /* Landscape phones and down */
@@ -202,10 +190,6 @@ li.fb-like.fb_iframe_widget.fb_iframe_widget_fluid {
 	#us-states li {
 		float: none;
 		width: 100%;
-	}
-
-	#right-menu {
-		display: none;
 	}
 
 	.modal {
