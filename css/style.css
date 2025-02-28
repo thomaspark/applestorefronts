@@ -145,6 +145,10 @@ body {
 	color: #aaa;
 }
 
+.modal-body {
+	padding: 3rem 3rem 1.5rem;
+}
+
 .close {
 	color: #fff;
 	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
