@@ -102,7 +102,13 @@ def modify_query(**new_values):
     for key, value in new_values.items():
         args[key] = value
 
-    return '{}?{}'.format(request.path, urlencode(args))
+    query_params = args.to_dict()
+    filtered_params = {k: v for k, v in query_params.items() if v is not None and v != ''}
+
+    if (len(urlencode(filtered_params)) > 0):
+        return '{}?{}'.format(request.path, urlencode(filtered_params))
+    else:
+        return '{}'.format(request.path)
 
 
 @app.route("/")
