@@ -2,6 +2,7 @@ runtime: python312
 app_engine_apis: true
 instance_class: F1
 automatic_scaling:
+  max_instances: 10
   max_idle_instances: 1
   min_pending_latency: automatic
   max_pending_latency: 30ms
