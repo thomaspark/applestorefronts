@@ -61,7 +61,7 @@
               </a>
               <ul class="dropdown-menu" data-no-collapse="true">
                 <li><a href="{{ modify_query(filter = None) }}">All</a></li>
-                <li><a href="{{ modify_query(filter = "gallery") }}">Gallery <i title="Top Picks" class="fas fa-star"></i></a></li>
+                <li><a href="{{ modify_query(filter = "gallery") }}">Gallery <i title="Top Picks" class="fas fa-images" style="margin-left: 3px;"></i></a></li>
                 <li class="divider"></li>
                 <li><a href="{{ modify_query(filter = "australia") }}">Australia</a></li>
                 <li><a href="{{ modify_query(filter = "austria") }}">Austria</a></li>
@@ -204,7 +204,7 @@
         </div>
 
         <div class="ribbon">
-          <p><strong><a class="anchor" data-href="#{{ store.1 }}" href="#{{ store.1 }}">#{{ store.0 }} {{ store.2 }}</a></strong> <span class="rnum">R{{ store.8 }}</span>{% if store.9 %}<span class="pull-right"><i title="Top Pick" class="fas fa-star"></i></span>{% endif %}</p>
+          <p><strong><a class="anchor" data-href="#{{ store.1 }}" href="#{{ store.1 }}">#{{ store.0 }} {{ store.2 }}</a></strong> <span class="rnum">R{{ store.8 }}</span>{% if store.9 %}<span class="pull-right"><i title="Top Pick" class="fas fa-images"></i></span>{% endif %}</p>
           <p>{% if store.3 %}{{ store.3 }}, {% endif %}{% if store.4 %}<a href="{{ modify_query(filter = store.4.split()|join("_")|lower()) }}">{{ store.4 }}</a>, {% endif %}<a href="{{ modify_query(filter = store.5|lower()) }}">{{ store.5 }}</a></p>
           <p>Opened: <a href="{{ modify_query(year = store.7) }}">{{ store.6 }}</a></p>
         </div>
