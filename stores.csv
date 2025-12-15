@@ -140,7 +140,7 @@ southlaketownsquare,Southlake Town Square,Southlake,TX,USA,"April 8, 2006",2006,
 flatironcrossing,Flatiron Crossing,Broomfield,CO,USA,"May 6, 2006",2006,182,
 eatoncentre,Eaton Centre,Toronto,Ontario,Canada,"May 6, 2006",2006,121,
 suburbansquare,Suburban Square,Ardmore,PA,USA,"May 13, 2006",2006,166,
-fifthavenue,Fifth Avenue,New York,NY,USA,"May 19, 2006",2006,095,gallery
+fifthavenue,Fifth Avenue,New York,NY,USA,"May 19, 2006",2006,095,
 freeholdracewaymall,Freehold Raceway Mall,Freehold,NJ,USA,"May 27, 2006",2006,138,
 perimeter,Perimeter,Atlanta,GA,USA,"June 3, 2006",2006,184,
 ridgedale,Ridgedale,Minnetonka,MN,USA,"June 6, 2006",2006,183,
@@ -193,13 +193,13 @@ santanvillage,SanTan Village,Gilbert,AZ,USA,"October 26, 2007",2007,267,
 townsquare,Town Square,Las Vegas,NV,USA,"November 14, 2007",2007,219,
 chestnutstreet,Chestnut Street,San Francisco,CA,USA,"November 23, 2007",2007,217,
 princesshay,Princesshay,Exeter,,UK,"November 24, 2007",2007,279,
-west14thstreet,West 14th Street,New York,NY,USA,"December 7, 2007",2007,250,gallery
+west14thstreet,West 14th Street,New York,NY,USA,"December 7, 2007",2007,250,
 miltonkeynes,Milton Keynes,Milton Keynes,,UK,"March 1, 2008",2008,269,
 malloflouisiana,Mall of Louisiana,Baton Rouge,LA,USA,"March 6, 2008",2008,263,
 grandarcade,Grand Arcade,Cambridgeshire,,UK,"March 27, 2008",2008,270,
 cherryhill,Cherry Hill,Cherry Hill,NJ,USA,"March 29, 2008",2008,206,
 fairoaks,Fair Oaks Mall,Fairfax,VA,USA,"April 26, 2008",2008,221,
-boylstonstreet,Boylston Street,Boston,MA,USA,"May 15, 2008",2008,149,gallery
+boylstonstreet,Boylston Street,Boston,MA,USA,"May 15, 2008",2008,149,
 pacificcentre,Pacific Centre,Vancouver,British Columbia,Canada,"May 24, 2008",2008,280,
 brandon,Brandon,Brandon,FL,USA,"May 24, 2008",2008,289,
 bridgestreet,Bridge Street,Huntsville,AL,USA,"May 31, 2008",2008,266,
@@ -240,14 +240,14 @@ lakesideshoppingcenter,Lakeside Shopping Center,Metairie,LA,USA,"September 27, 2
 whitecity,White City,London,,UK,"October 30, 2008",2008,226,
 dadeland,Dadeland Mall,Miami,FL,USA,"November 8, 2008",2008,312,
 vintagefaire,Vintage Faire,Modesto,CA,USA,"November 14, 2008",2008,322,
-rosenstrasse,Rosenstraße,Munich,,Germany,"December 6, 2008",2008,045,gallery
+rosenstrasse,Rosenstraße,Munich,,Germany,"December 6, 2008",2008,045,
 friendlycenter,Friendly Center,Greensboro,NC,USA,"February 21, 2009",2009,293,
 robina,Robina,Robina,,Australia,"May 9, 2009",2009,351,
 statestreet,State Street,Santa Barbara,CA,USA,"May 16, 2009",2009,317,
 rennweg,Rennweg,Zurich,,Switzerland,"May 22, 2009",2009,159,
 doncaster,Doncaster,Doncaster,,Australia,"May 23, 2009",2009,342,
 roseville,Roseville,Roseville,CA,USA,"June 6, 2009",2009,298,
-scottsdalequarter,Scottsdale Quarter,Scottsdale,AZ,USA,"June 12, 2009",2009,292,gallery
+scottsdalequarter,Scottsdale Quarter,Scottsdale,AZ,USA,"June 12, 2009",2009,292,
 rideau,Rideau,Ottawa,Ontario,Canada,"July 18, 2009",2009,332,
 churchillsquare,Churchill Square,Brighton,,UK,"July 25, 2009",2009,244,
 squareone,Square One,Mississauga,Ontario,Canada,"August 15, 2009",2009,350,
@@ -266,7 +266,7 @@ stdavids2,St. David's 2,Cardiff,,UK,"October 22, 2009",2009,334,
 unionsquare,Union Square,Aberdeen,,UK,"October 29, 2009",2009,363,
 chermside,Chermside,Chermside,,Australia,"November 14, 2009",2009,384,
 odysseum,Odysseum,Montpellier,,France,"November 14, 2009",2009,367,
-upperwestside,Upper West Side,New York,NY,USA,"November 14, 2009",2009,251,gallery
+upperwestside,Upper West Side,New York,NY,USA,"November 14, 2009",2009,251,
 pheasantlane,Pheasant Lane,Nashua,NH,USA,"November 21, 2009",2009,354,
 greenwichavenue,Greenwich Avenue,Greenwich,CT,USA,"November 21, 2009",2009,282,
 cribbscauseway,Cribbs Causeway,Bristol,,UK,"December 12, 2009",2009,393,
@@ -279,7 +279,7 @@ tacomamall,Tacoma Mall,Tacoma,WA,USA,"May 29, 2010",2010,339,
 georgetown,Georgetown,Washington,DC,USA,"June 18, 2010",2010,287,
 loscerritos,Los Cerritos,Cerritos,CA,USA,"June 24, 2010",2010,300,
 perthcity,Perth City,Perth,,Australia,"June 26, 2010",2010,386,
-opera,Opéra,Paris,,France,"July 3, 2010",2010,277,gallery
+opera,Opéra,Paris,,France,"July 3, 2010",2010,277,
 pudong,Pudong,Shanghai,,China,"July 10, 2010",2010,389,gallery
 haywoodmall,Haywood Mall,Greenville,SC,USA,"July 10, 2010",2010,355,
 polarisfashionplace,Polaris Fashion Place,Columbus,OH,USA,"July 24, 2010",2010,417,
@@ -305,7 +305,7 @@ centro,CentrO,Oberhausen,,Germany,"September 25, 2010",2010,403,
 riverparksquare,River Park Square,Spokane,WA,USA,"September 25, 2010",2010,420,
 chinookcentre,Chinook Centre,Calgary,Alberta,Canada,"September 29, 2010",2010,209,
 charlestown,Charlestown,Newcastle,,Australia,"October 21, 2010",2010,385,
-lincolnpark,Lincoln Park,Chicago,IL,USA,"October 23, 2010",2010,284,gallery
+lincolnpark,Lincoln Park,Chicago,IL,USA,"October 23, 2010",2010,284,
 placestefoy,Place Ste-Foy,Quebec,Quebec,Canada,"November 13, 2010",2010,412,
 summitmall,Summit Mall,Akron,OH,USA,"November 13, 2010",2010,353,
 universityparkmall,University Park Mall,Mishawaka,IN,USA,"November 13, 2010",2010,360,
@@ -332,7 +332,7 @@ city-galerie,City-Galerie,Augsburg,,Germany,"September 3, 2011",2011,431,
 campania,Campania,Marcianise,,Italy,"September 3, 2011",2011,453,
 mapleviewcentre,Mapleview Centre,Burlington,Ontario,Canada,"September 3, 2011",2011,447,
 stratfordcity,Stratford City,London,,UK,"September 13, 2011",2011,410,
-jungfernstieg,Jungfernstieg,Hamburg,,Germany,"September 17, 2011",2011,396,gallery
+jungfernstieg,Jungfernstieg,Hamburg,,Germany,"September 17, 2011",2011,396,
 viarizzoli,Via Rizzoli,Bologna,,Italy,"September 17, 2011",2011,427,
 braehead,Braehead,Glasgow,,UK,"September 17, 2011",2011,340,
 cielovistamall,Cielo Vista Mall,El Paso,TX,USA,"September 17, 2011",2011,492,
@@ -346,7 +346,7 @@ metrotown,Metrotown,Burnaby,British Columbia,Canada,"September 24, 2011",2011,46
 mtz,MTZ,Sulzbach,,Germany,"November 17, 2011",2011,434,
 lacanada,La Cañada,Marbella,,Spain,"November 25, 2011",2011,468,
 callecolon,Calle Colón,Valencia,,Spain,"December 3, 2011",2011,419,
-grandcentral,Grand Central,New York,NY,USA,"December 9, 2011",2011,415,gallery
+grandcentral,Grand Central,New York,NY,USA,"December 9, 2011",2011,415,
 amsterdam,Amsterdam,Amsterdam,,Netherlands,"March 3, 2012",2012,408,gallery
 highlandvillage,Highland Village,Houston,TX,USA,"March 16, 2012",2012,437,
 confluence,Confluence,Lyon,,France,"April 4, 2012",2012,469,
@@ -408,7 +408,7 @@ valacentrum,Väla Centrum,Helsingborg,,Sweden,"November 9, 2013",2013,593,
 haarlem,Haarlem,Haarlem,,Netherlands,"December 7, 2013",2013,539,
 duesseldorf,Düsseldorf,Düsseldorf,,Germany,"December 14, 2013",2013,331,
 chinacentralmall,China Central Mall,Beijing,,China,"January 10, 2014",2014,479,
-brisbane,Brisbane,Brisbane,,Australia,"January 17, 2014",2014,466,gallery
+brisbane,Brisbane,Brisbane,,Australia,"January 17, 2014",2014,466,
 villagemall,VillageMall,Rio de Janeiro,,Brazil,"February 15, 2014",2014,567,
 zorlucenter,Zorlu Center,İstanbul,,Turkey,"April 5, 2014",2014,583,gallery
 omotesando,Omotesando,Tokyo,,Japan,"June 13, 2014",2014,224,gallery
@@ -418,7 +418,7 @@ freiestrasse,Freie Strasse,Basel,,Switzerland,"July 12, 2014",2014,439,
 thegreene,The Greene,Beavercreek,OH,USA,"July 19, 2014",2014,518,
 paradisewalkchongqing,Paradise Walk Chongqing,Chongqing,,China,"July 26, 2014",2014,476,
 center66wuxi,Center 66 Wuxi,Wuxi,,China,"August 2, 2014",2014,574,
-denhaag,Den Haag,The Hague,,Netherlands,"August 9, 2014",2014,540,gallery
+denhaag,Den Haag,The Hague,,Netherlands,"August 9, 2014",2014,540,
 eastwoodtownecenter,Eastwood Towne Center,Lansing,MI,USA,"August 9, 2014",2014,616,
 evergreenwalk,Evergreen Walk,South Windsor,CT,USA,"August 23, 2014",2014,613,
 cumberlandmall,Cumberland Mall,Atlanta,GA,USA,"September 6, 2014",2014,591,
@@ -451,7 +451,7 @@ brussels,Brussels,Brussels,,Belgium,"September 19, 2015",2015,486,gallery
 infiniteloop,Infinite Loop,Cupertino,CA,USA,"September 19, 2015",2015,052,
 firenze,Firenze,Florence,,Italy,"September 26, 2015",2015,602,
 parkland,Parkland,Dalian,,China,"October 24, 2015",2015,478,
-malloftheemirates,Mall of the Emirates,Dubai,,United Arab Emirates,"October 29, 2015",2015,596,gallery
+malloftheemirates,Mall of the Emirates,Dubai,,United Arab Emirates,"October 29, 2015",2015,596,
 yasmall,Yas Mall,Abu Dhabi,,United Arab Emirates,"October 29, 2015",2015,595,
 taikoolichengdu,Taikoo Li Chengdu,Chengdu,,China,"November 21, 2015",2015,580,
 chaoyangjoycity,Chaoyang Joy City,Beijing,,China,"November 28, 2015",2015,645,
@@ -492,13 +492,13 @@ garosugil,Garosugil,Seoul,,Korea,"January 27, 2018",2018,692,
 kaerntnerstrasse,Kärntner Straße,Vienna,,Austria,"February 24, 2018",2018,687,
 shinjuku,Shinjuku,Tokyo,,Japan,"April 7, 2018",2018,128,
 cotaistrip,Cotai Strip,Macao,,China,"June 29, 2018",2018,697,
-piazzaliberty,Piazza Liberty,Milan,,Italy,"July 26, 2018",2018,667,gallery
+piazzaliberty,Piazza Liberty,Milan,,Italy,"July 26, 2018",2018,667,
 kyoto,Kyoto,Kyoto,,Japan,"August 25, 2018",2018,711,
 suzhou,Suzhou,Suzhou,,China,"September 21, 2018",2018,688,
 iconsiam,Iconsiam,Bangkok,,Thailand,"November 11, 2018",2018,728,gallery
 champs-elysees,Champs-Élysées,Paris,,France,"November 18, 2018",2018,675,gallery
 galleriadallas,Galleria Dallas,Dallas,TX,USA,"April 13, 2018",2018,746,
-carnegielibrary,Carnegie Library,Washington,DC,USA,"May 11, 2019",2019,516,gallery
+carnegielibrary,Carnegie Library,Washington,DC,USA,"May 11, 2019",2019,516,
 xinyia13,Xinyi A13,Taipei,,Taiwan,"June 15, 2019",2019,694,
 jewelchangiairport,Jewel Changi Airport,,,Singapore,"July 13, 2019",2019,736,
 marunouchi,Marunouchi,Tokyo,,Japan,"September 7, 2019",2019,718,
@@ -509,7 +509,7 @@ marinabaysands,Marina Bay Sands,,,Singapore,"September 10, 2020",2020,633,galler
 yeouido,Yeouido,Seoul,,Korea,"February 26, 2021",2021,747,
 downtownnashville,Downtown Nashville,Nashville,TN,USA,"March 29, 2021",2021,133,
 viadelcorso,Via del Corso,Rome,,Italy,"May 27, 2021",2021,382,
-towertheatre,Tower Theatre,Los Angeles,CA,USA,"June 24, 2021",2021,720,gallery
+towertheatre,Tower Theatre,Los Angeles,CA,USA,"June 24, 2021",2021,720,
 changsha,Changsha,Changsha,,China,"September 4, 2021",2021,617,
 themallatbayplaza,The Mall at Bay Plaza,Bronx,NY,USA,"September 24, 2021",2021,753,
 bagdatcaddesi,Bağdat Caddesi,Istanbul,,Turkey,"October 22, 2021",2021,724,gallery
@@ -538,9 +538,9 @@ mixchefei,MixC Hefei,Hefei,,China,"January 18, 2025",2025,765,
 miamiworldcenter,Miami Worldcenter,Miami,FL,USA,"January 24, 2025",2025,752,
 umeda,Umeda,Osaka,,Japan,"July 26, 2025",2025,768,
 uniwalkqianhai,Uniwalk Qianhai,Shenzhen,,China,"August 16, 2025",2025,793,
-hebbal,Hebbal,Bengaluru,,India,"September 2, 2025",2025,790,gallery
-koregaonpark,Koregaon Park,Pune,,India,"September 4,2025",2025,788,gallery
+hebbal,Hebbal,Bengaluru,,India,"September 2, 2025",2025,790,
+koregaonpark,Koregaon Park,Pune,,India,"September 4,2025",2025,788,
 downtowndetroit,Downtown Detroit,Detroit,MI,USA,"September 19, 2025",2025,763,
-aljimimall,Al Jimi Mall,Al Ain,,United Arab Emirates,"September 25, 2025",2025,785,gallery
+aljimimall,Al Jimi Mall,Al Ain,,United Arab Emirates,"September 25, 2025",2025,785,
 livatbeijing,Livat Beijing,Beijing,,China,"December 6, 2025",2025,792,
-noida,Noida,Noida,,India,"December 11, 2025",2025,787,
+noida,Noida,Noida,,India,"December 11, 2025",2025,787,gallery
