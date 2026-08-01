@@ -1,21 +1,28 @@
 runtime: python312
-app_engine_apis: true
 instance_class: F1
 automatic_scaling:
-  max_instances: 10
-  max_idle_instances: 1
+  max_instances: 3
   min_pending_latency: automatic
-  max_pending_latency: 30ms
+  max_pending_latency: automatic
 
 handlers:
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
+  expiration: "1d"
+
 - url: /css
   static_dir: css
+  expiration: "30d"
 
 - url: /js
   static_dir: js
+  expiration: "30d"
 
 - url: /vendor
   static_dir: vendor
+  expiration: "30d"
 
 - url: /img
   static_dir: img
+  expiration: "30d"

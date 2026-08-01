@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
   <meta name="description" content="A photo gallery of every Apple retail store the world over.">
   <meta name="author" content="Thomas Park">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
   <link rel="canonical" href="https://applestorefronts.appspot.com/">
   <link rel="stylesheet" href="/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
-  <link rel="stylesheet" href="/vendor/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/vendor/font-awesome/css/fontawesome.min.css">
+  <link rel="stylesheet" href="/vendor/font-awesome/css/solid.min.css">
   <link rel="stylesheet" href="/css/style.css">
   <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">
   <link rel="apple-touch-icon" sizes="144x144" href="img/icon-144x144.png">
@@ -60,97 +61,97 @@
                 <i class="fa-solid fa-filter"></i>
               </a>
               <ul class="dropdown-menu" data-no-collapse="true">
-                <li><a href="{{ modify_query(filter = None) }}">All</a></li>
-                <li><a href="{{ modify_query(filter = "gallery") }}">Gallery <i title="Top Picks" class="fas fa-images" style="margin-left: 3px;"></i></a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = None) }}">All</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "gallery") }}">Gallery <i title="Top Picks" class="fas fa-images" style="margin-left: 3px;"></i></a></li>
                 <li class="divider"></li>
-                <li><a href="{{ modify_query(filter = "australia") }}">Australia</a></li>
-                <li><a href="{{ modify_query(filter = "austria") }}">Austria</a></li>
-                <li><a href="{{ modify_query(filter = "belgium") }}">Belgium</a></li>
-                <li><a href="{{ modify_query(filter = "brazil") }}">Brazil</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "australia") }}">Australia</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "austria") }}">Austria</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "belgium") }}">Belgium</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "brazil") }}">Brazil</a></li>
                 <li class="dropdown-submenu">
-                  <a href="{{ modify_query(filter = "canada") }}">Canada</a>
+                  <a rel="nofollow" href="{{ modify_query(filter = "canada") }}">Canada</a>
                   <ul class="dropdown-menu">
-                    <li><a href="{{ modify_query(filter = "alberta") }}">Alberta</a></li>
-                    <li><a href="{{ modify_query(filter = "british columbia") }}">British Columbia</a></li>
-                    <li><a href="{{ modify_query(filter = "manitoba") }}">Manitoba</a></li>
-                    <li><a href="{{ modify_query(filter = "nova scotia") }}">Nova Scotia</a></li>
-                    <li><a href="{{ modify_query(filter = "ontario") }}">Ontario</a></li>
-                    <li><a href="{{ modify_query(filter = "quebec") }}">Quebec</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "alberta") }}">Alberta</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "british columbia") }}">British Columbia</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "manitoba") }}">Manitoba</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "nova scotia") }}">Nova Scotia</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ontario") }}">Ontario</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "quebec") }}">Quebec</a></li>
                   </ul>
                 </li>
-                <li><a href="{{ modify_query(filter = "china") }}">China</a></li>
-                <li><a href="{{ modify_query(filter = "france") }}">France</a></li>
-                <li><a href="{{ modify_query(filter = "germany") }}">Germany</a></li>
-                <li><a href="{{ modify_query(filter = "india") }}">India</a></li>
-                <li><a href="{{ modify_query(filter = "italy") }}">Italy</a></li>
-                <li><a href="{{ modify_query(filter = "japan") }}">Japan</a></li>
-                <li><a href="{{ modify_query(filter = "korea") }}">Korea</a></li>
-                <li><a href="{{ modify_query(filter = "malaysia") }}">Malaysia</a></li>
-                <li><a href="{{ modify_query(filter = "mexico") }}">Mexico</a></li>
-                <li><a href="{{ modify_query(filter = "netherlands") }}">Netherlands</a></li>
-                <li><a href="{{ modify_query(filter = "singapore") }}">Singapore</a></li>
-                <li><a href="{{ modify_query(filter = "spain") }}">Spain</a></li>
-                <li><a href="{{ modify_query(filter = "sweden") }}">Sweden</a></li>
-                <li><a href="{{ modify_query(filter = "switzerland") }}">Switzerland</a></li>
-                <li><a href="{{ modify_query(filter = "taiwan") }}">Taiwan</a></li>
-                <li><a href="{{ modify_query(filter = "thailand") }}">Thailand</a></li>
-                <li><a href="{{ modify_query(filter = "turkey") }}">Turkey</a></li>
-                <li><a href="{{ modify_query(filter = "united arab emirates") }}">United Arab Emirates</a></li>
-                <li><a href="{{ modify_query(filter = "uk") }}">United Kingdom</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "china") }}">China</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "france") }}">France</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "germany") }}">Germany</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "india") }}">India</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "italy") }}">Italy</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "japan") }}">Japan</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "korea") }}">Korea</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "malaysia") }}">Malaysia</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "mexico") }}">Mexico</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "netherlands") }}">Netherlands</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "singapore") }}">Singapore</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "spain") }}">Spain</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "sweden") }}">Sweden</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "switzerland") }}">Switzerland</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "taiwan") }}">Taiwan</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "thailand") }}">Thailand</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "turkey") }}">Turkey</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "united arab emirates") }}">United Arab Emirates</a></li>
+                <li><a rel="nofollow" href="{{ modify_query(filter = "uk") }}">United Kingdom</a></li>
                 <li class="dropdown-submenu">
-                  <a href="{{ modify_query(filter = "usa") }}">United States</a>
+                  <a rel="nofollow" href="{{ modify_query(filter = "usa") }}">United States</a>
                   <ul id="us-states" class="dropdown-menu">
-                    <li><a href="{{ modify_query(filter = "al") }}">Alabama</a></li>
-                    <li><a href="{{ modify_query(filter = "ak") }}">Alaska</a></li>
-                    <li><a href="{{ modify_query(filter = "az") }}">Arizona</a></li>
-                    <li><a href="{{ modify_query(filter = "ar") }}">Arkansas</a></li>
-                    <li><a href="{{ modify_query(filter = "ca") }}">California</a></li>
-                    <li><a href="{{ modify_query(filter = "co") }}">Colorado</a></li>
-                    <li><a href="{{ modify_query(filter = "ct") }}">Connecticut</a></li>
-                    <li><a href="{{ modify_query(filter = "de") }}">Delaware</a></li>
-                    <li><a href="{{ modify_query(filter = "dc") }}">District of Columbia</a></li>
-                    <li><a href="{{ modify_query(filter = "fl") }}">Florida</a></li>
-                    <li><a href="{{ modify_query(filter = "ga") }}">Georgia</a></li>
-                    <li><a href="{{ modify_query(filter = "hi") }}">Hawaii</a></li>
-                    <li><a href="{{ modify_query(filter = "id") }}">Idaho</a></li>
-                    <li><a href="{{ modify_query(filter = "il") }}">Illinois</a></li>
-                    <li><a href="{{ modify_query(filter = "in") }}">Indiana</a></li>
-                    <li><a href="{{ modify_query(filter = "ia") }}">Iowa</a></li>
-                    <li><a href="{{ modify_query(filter = "ks") }}">Kansas</a></li>
-                    <li><a href="{{ modify_query(filter = "ky") }}">Kentucky</a></li>
-                    <li><a href="{{ modify_query(filter = "la") }}">Louisiana</a></li>
-                    <li><a href="{{ modify_query(filter = "me") }}">Maine</a></li>
-                    <li><a href="{{ modify_query(filter = "md") }}">Maryland</a></li>
-                    <li><a href="{{ modify_query(filter = "ma") }}">Massachusetts</a></li>
-                    <li><a href="{{ modify_query(filter = "mi") }}">Michigan</a></li>
-                    <li><a href="{{ modify_query(filter = "mn") }}">Minnesota</a></li>
-                    <li><a href="{{ modify_query(filter = "ms") }}">Mississippi</a></li>
-                    <li><a href="{{ modify_query(filter = "mo") }}">Missouri</a></li>
-                    <li><a href="{{ modify_query(filter = "mt") }}">Montana</a></li>
-                    <li><a href="{{ modify_query(filter = "ne") }}">Nebraska</a></li>
-                    <li><a href="{{ modify_query(filter = "nv") }}">Nevada</a></li>
-                    <li><a href="{{ modify_query(filter = "nh") }}">New Hampshire</a></li>
-                    <li><a href="{{ modify_query(filter = "nj") }}">New Jersey</a></li>
-                    <li><a href="{{ modify_query(filter = "nm") }}">New Mexico</a></li>
-                    <li><a href="{{ modify_query(filter = "ny") }}">New York</a></li>
-                    <li><a href="{{ modify_query(filter = "nc") }}">North Carolina</a></li>
-                    <li><a href="{{ modify_query(filter = "nd") }}">North Dakota</a></li>
-                    <li><a href="{{ modify_query(filter = "oh") }}">Ohio</a></li>
-                    <li><a href="{{ modify_query(filter = "ok") }}">Oklahoma</a></li>
-                    <li><a href="{{ modify_query(filter = "or") }}">Oregon</a></li>
-                    <li><a href="{{ modify_query(filter = "pa") }}">Pennsylvania</a></li>
-                    <li><a href="{{ modify_query(filter = "ri") }}">Rhode Island</a></li>
-                    <li><a href="{{ modify_query(filter = "sc") }}">South Carolina</a></li>
-                    <li><a href="{{ modify_query(filter = "sd") }}">South Dakota</a></li>
-                    <li><a href="{{ modify_query(filter = "tn") }}">Tennessee</a></li>
-                    <li><a href="{{ modify_query(filter = "tx") }}">Texas</a></li>
-                    <li><a href="{{ modify_query(filter = "ut") }}">Utah</a></li>
-                    <li><a href="{{ modify_query(filter = "vt") }}">Vermont</a></li>
-                    <li><a href="{{ modify_query(filter = "va") }}">Virginia</a></li>
-                    <li><a href="{{ modify_query(filter = "wa") }}">Washington</a></li>
-                    <li><a href="{{ modify_query(filter = "wv") }}">West Virginia</a></li>
-                    <li><a href="{{ modify_query(filter = "wi") }}">Wisconson</a></li>
-                    <li><a href="{{ modify_query(filter = "wy") }}">Wyoming</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "al") }}">Alabama</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ak") }}">Alaska</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "az") }}">Arizona</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ar") }}">Arkansas</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ca") }}">California</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "co") }}">Colorado</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ct") }}">Connecticut</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "de") }}">Delaware</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "dc") }}">District of Columbia</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "fl") }}">Florida</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ga") }}">Georgia</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "hi") }}">Hawaii</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "id") }}">Idaho</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "il") }}">Illinois</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "in") }}">Indiana</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ia") }}">Iowa</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ks") }}">Kansas</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ky") }}">Kentucky</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "la") }}">Louisiana</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "me") }}">Maine</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "md") }}">Maryland</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ma") }}">Massachusetts</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "mi") }}">Michigan</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "mn") }}">Minnesota</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ms") }}">Mississippi</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "mo") }}">Missouri</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "mt") }}">Montana</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ne") }}">Nebraska</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "nv") }}">Nevada</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "nh") }}">New Hampshire</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "nj") }}">New Jersey</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "nm") }}">New Mexico</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ny") }}">New York</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "nc") }}">North Carolina</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "nd") }}">North Dakota</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "oh") }}">Ohio</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ok") }}">Oklahoma</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "or") }}">Oregon</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "pa") }}">Pennsylvania</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ri") }}">Rhode Island</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "sc") }}">South Carolina</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "sd") }}">South Dakota</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "tn") }}">Tennessee</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "tx") }}">Texas</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "ut") }}">Utah</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "vt") }}">Vermont</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "va") }}">Virginia</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "wa") }}">Washington</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "wv") }}">West Virginia</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "wi") }}">Wisconson</a></li>
+                    <li><a rel="nofollow" href="{{ modify_query(filter = "wy") }}">Wyoming</a></li>
                   </ul>
                 </li>
               </ul>
@@ -158,14 +159,14 @@
           </li>
           <li>
             <div class="btn-group sort-group">
-              <a class="btn{% if sort != 'old' %} active{% endif %}" id="new" title="Sort Newest First" href="{{ modify_query(sort = "new") }}"><i class="fas fa-chevron-down"></i></a>
-              <a class="btn{% if sort == 'old' %} active{% endif %}" id="old" title="Sort Oldest First" href="{{ modify_query(sort = "old") }}"><i class="fas fa-chevron-up"></i></a>
+              <a class="btn{% if sort != 'old' %} active{% endif %}" id="new" title="Sort Newest First" rel="nofollow" href="{{ modify_query(sort = "new") }}"><i class="fas fa-chevron-down"></i></a>
+              <a class="btn{% if sort == 'old' %} active{% endif %}" id="old" title="Sort Oldest First" rel="nofollow" href="{{ modify_query(sort = "old") }}"><i class="fas fa-chevron-up"></i></a>
             </div>
           </li>
           <li>
             <div class="btn-group size-group">
-              <a class="btn{% if size != 'big' %} active{% endif %}" id="small" title="Small Grid" href="{{ modify_query(size = "small") }}"><i class="fa-solid fa-grid"></i></a>
-              <a class="btn{% if size == 'big' %} active{% endif %}" id="big" title="Big Grid" href="{{ modify_query(size = "big") }}"><i class="fa-solid fa-grid-2"></i></a>
+              <a class="btn{% if size != 'big' %} active{% endif %}" id="small" title="Small Grid" rel="nofollow" href="{{ modify_query(size = "small") }}"><i class="fa-solid fa-grid"></i></a>
+              <a class="btn{% if size == 'big' %} active{% endif %}" id="big" title="Big Grid" rel="nofollow" href="{{ modify_query(size = "big") }}"><i class="fa-solid fa-grid-2"></i></a>
             </div>
           </li>
           <li>
@@ -205,8 +206,8 @@
 
         <div class="ribbon">
           <p><strong><a class="anchor" data-href="#{{ store.1 }}" href="#{{ store.1 }}">#{{ store.0 }} {{ store.2 }}</a></strong> <span class="rnum">R{{ store.8 }}</span>{% if store.9 %}<span class="pull-right"><i title="Top Pick" class="fas fa-images"></i></span>{% endif %}</p>
-          <p>{% if store.3 %}{{ store.3 }}, {% endif %}{% if store.4 %}<a href="{{ modify_query(filter = store.4.split()|join("_")|lower()) }}">{{ store.4 }}</a>, {% endif %}<a href="{{ modify_query(filter = store.5|lower()) }}">{{ store.5 }}</a></p>
-          <p>Opened: <a href="{{ modify_query(year = store.7) }}">{{ store.6 }}</a></p>
+          <p>{% if store.3 %}{{ store.3 }}, {% endif %}{% if store.4 %}<a rel="nofollow" href="{{ modify_query(filter = store.4.split()|join("_")|lower()) }}">{{ store.4 }}</a>, {% endif %}<a rel="nofollow" href="{{ modify_query(filter = store.5|lower()) }}">{{ store.5 }}</a></p>
+          <p>Opened: <a rel="nofollow" href="{{ modify_query(year = store.7) }}">{{ store.6 }}</a></p>
         </div>
 
       </div>

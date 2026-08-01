@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /*?*filter=
+Disallow: /*?*sort=
+Disallow: /*?*size=
+Disallow: /*?*year=
+Allow: /$
