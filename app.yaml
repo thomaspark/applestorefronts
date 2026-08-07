@@ -1,7 +1,7 @@
 runtime: python312
 instance_class: F1
 automatic_scaling:
-  max_instances: 3
+  max_instances: 5
   min_pending_latency: automatic
   max_pending_latency: automatic
 

@@ -1,6 +1,6 @@
 import csv
 from urllib.parse import urlencode
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, make_response
 from google.appengine.api import wrap_wsgi_app
 
 app = Flask(__name__)
@@ -136,7 +136,9 @@ def front():
             stores = [item for item in stores if (item[5] == filter) or (item[4].lower() == filter.lower())]
 
 
-    return render_template("index.html", stores=stores, size = size, sort = sort, year = year)
+    response = make_response(render_template("index.html", stores=stores, size = size, sort = sort, year = year))
+    response.headers["Cache-Control"] = "public, max-age=300"
+    return response
 
 
 if __name__ == "__main__":
